@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form" action="">
+
+        <fieldset>
+            <label id="name-label" for="name">Name (required):</label>
+            <input
+            type="text"
+            name="name"
+            id="name"
+            required
+            placeholder="Ex: John Doe"
+            /><br>
+            
+            <label id="email-label" for="email">Email (required):</label>
+            <input type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="example@email.com"
+            /><br>
+
+            <label id="number-label" for="number">Age (optional):</label>
+            <input type="number"
+            name="age" id="number"
+            required min="1"
+            max="100"
+            placeholder="Ex: 69"
+            /><br>
+        </fieldset>
+
+        <fieldset>
+            <label  id="dropdown-label" for="dropdown">What option best describes you?</label><br>
+            <select name="dropdown" id="dropdown">
+                <option value="student">Student</option>
+                <option value="full-time">Full Time</option>
+                <option value="part-time">Part Time</option>
+                <option value="other">Other</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Would you recommend freeCodeCamp to a friend?</legend>
+
+            <label for="yes-option">Yes</label>
+            <input type="radio" id="yes-option" name="recommend" value="yes-option">
+            <label for="no-option">No</label>
+            <input type="radio" id="no-option" name="recommend" value="no-option">
+        </fieldset>
+
+        <fieldset>
+            <legend>What would you like to see improved? (Check all that apply)</legend>
+
+            <label for="videos">Videos</label>
+            <input 
+                type="checkbox" 
+                id="videos" 
+                name="videos"
+                value="videos"
+                checked
+            />
+
+            <label for="images">Images</label>
+            <input 
+                type="checkbox" 
+                id="images" 
+                name="images"
+                value="images"
+            />
+
+            <label for="tests">Tests</label>
+            <input 
+                type="checkbox" 
+                id="tests" 
+                name="tests"
+                value="tests"
+            />
+
+            <label for="exams">Exams</label>
+            <input 
+                type="checkbox" 
+                id="exams" 
+                name="exams"
+                value="exams"
+            />
+        </fieldset>
+
+        <fieldset>
+
+            <label for="comment">Any comments or suggestions?</label><br>
+            <textarea name="comment" id="comment" placeholder="Enter your comment here..." cols="30" rows="5"></textarea>
+
+        </fieldset>
+
+        <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
