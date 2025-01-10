@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Checkout Page</title>
+</head>
+
+<body>
+    <main>
+        <h1>Checkout</h1>
+        <section>
+            <h2>Your Cart</h2>
+            <img src="https://cdn.freecodecamp.org/curriculum/labs/cube.jpg" alt="Rubix Cube">
+        </section>
+
+        <section>
+            <h2>Payment Information</h2>
+            <form action="payment-form">
+                <fieldset>
+                    <label for="card-name">Cardholder Name</label>
+                    <input type="text" id="card-name" name="card-name" required aria-required="true"><br>
+
+                    <label for="card-number">Card Number</label>
+                    <input type="number" id="card-number" name="card-number" max="9999999999999999" required aria-required="true"><br>
+
+                    <label for="expiry-date">Expiry Date</label>
+                    <input type="date" id="expiry-date" name="expiry-date" required aria-required="true"><br>
+
+                    <label for="cvv">CVV</label>
+                    <input type="number" id="cvv" name="cvv" max="999" required aria-required="true">
+                </fieldset>
+
+                <button id="submit" type="submit">Place Order</button>
+            </form>
+        </section>
+
+    </main>
+</body>
+
+</html>
